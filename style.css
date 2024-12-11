@@ -167,6 +167,9 @@ nav{
   .accordion-header:hover img{
     transform: rotate(3.142rad);
   }
+  .accordion-header::after img{
+    transform: rotate(3.142rad);
+  }
   .accordion-header span{
     padding-left: 5px;
   }
@@ -186,6 +189,10 @@ nav{
     width: 100%;
   }
   .accordion-header:hover {
+    background-color: white;
+    color: black;
+  }
+  .accordion-header::after{
     background-color: white;
     color: black;
   }
