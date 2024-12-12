@@ -29,10 +29,22 @@ nav{
     color: black;
     border-radius: 10px;
 }
+.nav-link{
+    margin: 5px;
+    width: 150px;
+}
 .navbar-nav a{
     padding-left: 5px;
     padding-right: 5px;
     transition: 0.5s ease all;
+}
+nav .active1{
+    background-color: white;
+    color: black !important;
+    border-radius: 10px;
+}
+.dropdown{
+    margin: 5px;
 }
 .dropdown-menu{
     display: none;
@@ -71,6 +83,7 @@ nav{
     background-position: center;
     animation: animasibg 20s ease infinite alternate;
 }
+
 @keyframes animasibg {
     0%{
         background-image: url(img/pexels-scottwebb-430208.jpg);
@@ -210,6 +223,86 @@ nav{
     padding: 15px 0;
   }
 
+  .nowa{
+    text-align: center;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Oswald";
+  }
+  .nowa h1{
+    color: white;
+    padding-bottom: 10px;
+  }
+  .btn2{
+    background-color: white;
+    color: black;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 0.3s ease all;
+  }
+  .btn2 a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease all;
+  }
+  .btn2:hover{
+    background-color: black;
+    border: 3px solid white;
+    padding: 10px;
+  }
+  .btn2:hover a{
+    color: white;
+  }
+
+
+
+  .horizontal-scroll{
+    background-color: black;
+    width: 100%;
+    overflow-x: scroll;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.horizontal-scroll::-webkit-scrollbar{
+    display: none;
+}
+.horizontal-scroll .container{
+    display: flex;
+    padding: 10px;
+}
+.ulasan{
+  font-family: "Oswald";
+    display: inline;
+    min-width: 30%;
+    background-color: white;
+    scroll-snap-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.ulasan-t{
+  margin-right: 20px;
+}
+.ulasan img{
+    width: 30%;
+}
+.bintang{
+  font-style: oblique;
+  display: flex;
+  gap: 1rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.bintang h5{
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.bintang div{
+  text-align: right;
+  margin-bottom: -12px;
+}
 @media (max-width: 992px){
     .hal1-t{
         height: 30%;
@@ -223,5 +316,21 @@ nav{
         display: block; /* Menjadikan gambar block element */
         margin:  auto; /* Memastikan gambar berada di tengah */
         width: 150px;
-      }
+    }
+
+    .ulasan{  
+      min-width: 60%;
+    }
+    .ulasan img{
+      width: 60%;
+      height: max-content;
+    }
+    .bintang{
+      display: block;
+    }
+    .bintang div{
+      text-align: left;
+      display: flex;
+      gap: 1rem;
+    }
 }
