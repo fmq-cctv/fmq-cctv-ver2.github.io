@@ -143,6 +143,36 @@ nav .active1{
     text-align: center;
     font-family: "Oswald";
 }
+
+.tombol{
+  position: absolute;
+  margin-left: 30px;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  display: inline-grid;
+  gap: 10px;
+  width: 55px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 4px 4px 2px black;
+}
+.icon img{
+  width: 45px;
+}
+.icon a:hover{
+  background-color: black;
+  padding: 5px;
+  border-radius: 10px;
+}
+.icon a{
+  transition: 0.5s ease all;
+}
+.icon{
+  position: sticky;
+  top: 80px;
+}
+
 /* accordion */
 .accordion-full{
     font-family: Arial, sans-serif;
@@ -303,7 +333,20 @@ nav .active1{
   text-align: right;
   margin-bottom: -12px;
 }
+
+
+footer{
+  padding-top: 15px;
+}
+footer img{
+  width: 20px;
+}
+
 @media (max-width: 992px){
+
+  .nav-link{
+    width: 100%;
+  }
     .hal1-t{
         height: 30%;
         padding-bottom: 20px;
